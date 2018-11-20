@@ -60,7 +60,7 @@
     <!-- Any section element inside of this container is displayed as a slide -->
     <div class="slides">
       <section>
-        <h2>Bibliothekarische Daten im Web –</h2> 
+        <h2>Bibliothekarische Daten im Web –</h2>
 				<h3>Linked Open Data, Web-APIs & JSON-LD</h3>
         <p>
           <small>
@@ -82,8 +82,7 @@
 			<section>
         <h1>Agenda</h1>
 				<ol>
-					<li>Linked Open Data</li>
-					<li>Web APIs & JSON-LD</li>
+					<li>Linked Open Data & Web-APIs</li>
 					<li>lobid</li>
 					<ol style="list-style-type:lower-latin !important;">
 						<li>Oberfläche</li>
@@ -94,43 +93,80 @@
       </section>
 
 			<section>
-        <h1>1. Linked Open Data</h1>
+        <h1>1. LOD & Web APIs</h1>
       </section>
 
 			<section>
-        <h1>2. Web APIs & JSON-LD</h1>
+				<h2><i>Open</i> Data</h2>
+				<p><span class="fragment">Rechtliche Hürden beseitigen</span></p>
+				<p><span class="fragment">Daten unter <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 Public Domain Dedication</a> veröffentlichen</span></p>
+			</section>
+
+			<section>
+				<h2>Das World Wide Web</h2>
+				<p><span class="fragment">Ein Netz verlinkter Dokumente/Webseiten</span></p>
+				<p><span class="fragment">Fundamente: Hypertext Transfer Protocol (HTTP) & Hypertext Markup Language (HTML)</span></p>
+			</section>
+
+			<section>
+				<h2>Linked Open Data</h2>
+				<p><span class="fragment">Linked Data: Web der Daten</span></p>
+				<p><span class="fragment">Fundamente: HTTP & Resource Description Framework (RDF)</span></p>
+				<p><span class="fragment">Abfrage-Standard: SPARQL Protocol And RDF Query Language (SPARQL)</span></p>
+			</section>
+
+			<section>
+				<h2>URLs als Identifikatoren</h2>
+				<p><span class="fragment">jeder Titel, jede Normdatenressource, jedes Feld hat eine feste ID</span></p>
+				<p><span class="fragment">als IDs dienen URLs, d.h. man kann sie in einem Webbrowser anschauen</span></p>
+				<p><span class="fragment">Weitere Informationen in verlinkten Daten</span></p>
+			</section>
+
+
+			<section>
+				<pre>
+					<code class="nohighlight" data-trim>
+&lt;http://d-nb.info/gnd/11850391X&gt;
+&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt;
+&lt;http://d-nb.info/standards/elementset/gnd#DifferentiatedPerson&gt; .
+&lt;http://d-nb.info/gnd/11850391X&gt;
+&lt;http://d-nb.info/standards/elementset/gnd#preferredName&gt;
+"Arendt, Hannah" .
+&lt;http://d-nb.info/gnd/11850391X&gt;
+&lt;http://d-nb.info/standards/elementset/gnd#placeOfBirth&gt;
+&lt;http://d-nb.info/gnd/4099668-2&gt; .
+					</code>
+				</pre>
+			</section>
+
+
+			<section>
+				<h2>RDF vs. JSON</h2>
+				<a href="https://trends.google.com/trends/explore?date=all&q=rdf,json"><img src="img/json-vs-rdf.png" style="border: none; box-shadow: none;" /></a>
+      </section>
+
+			<section>
+				<h2>Web API vs. SPARQL</h2>
+				<a href="https://trends.google.com/trends/explore?date=all&q=web%20api,sparql"><img src="img/api-vs-sparql.png" style="border: none; box-shadow: none;" /></a>
       </section>
 
 			<section>
 				<h2>LOD-API: Was ist das?</h2>
-				<ul>
-					<li>Erweiterte Suche über URL
-					<ul>
-						<li>Antwort: strukturierte Daten (hier: JSON) &lt;- leicht und schnell zu verarbeiten</li>
-					</ul>
-					</li>
-					<li>Anstatt bloße Labels: Links auf weitere strukturierte Daten (Normdatenprinzip) </li>
-					<li>Schnell, weil basierend auf Suchmaschinentechnologie</li>
-				</ul>
-			<section>
-
-
-				<section>
-					<h2>Vorteile</h2>
-					<ul>
-						<li>Adressierbarkeit: 
-						<ul>
-							<li>jeder Titel, jede Normdatenressource, jede Organisation hat eine feste URL</li>
-							<li>auch: jede Suche hat eine URL</li>
-						</ul>
-						</li>
-						<li>Einfache Nutzung</li>
-						<li>Wertvolle Informationen in verlinkten Daten, z. B. Geodaten</li>
-					</ul>
-				<section>
+				<p><span class="fragment">"Erweiterte Suche über URL"</span></p>
+				<p><span class="fragment">Antwort: strukturierte Daten (hier: JSON) &lt;- leicht und schnell zu verarbeiten</span></p>
+				<p><span class="fragment">Anstatt bloße Labels: Links auf weitere strukturierte Daten (Normdatenprinzip)</span></p>
+				<p><span class="fragment">Schnell, weil basierend auf Suchmaschinentechnologie</span></p>
+				<p><span class="fragment">neben Einträgen und Feldern hat auch jede Suchanfrage eine feste URL</span></p>
+			</section>
 
 			<section>
-        <h1>3. lobid</h1>
+				<h2>Linked Open <i>Usable</i> Data</h2>
+				<a href="https://de.slideshare.net/azaroth42/europeanatech-keynote-shout-it-out-loud/40"><img src="img/europeana-loud-40.png" width=800 style="border: none; box-shadow: none;" /></a>
+				<p><font size="3">Quelle: <a href="https://www.slideshare.net/azaroth42/europeanatech-keynote-shout-it-out-loud">Rob Sanderson, "Shout it Out: LOUD"</a>, CC-BY</font></p>
+			</section>
+
+			<section>
+        <h1>2. lobid</h1>
       </section>
 
 			<section>
@@ -157,7 +193,7 @@
 
 			<section>
 				<h3>Datenquellen und -formate</h3>
-				<img src="img/lobid-data.png" style="border: none; box-shadow: none;" /> 
+				<img src="img/lobid-data.png" style="border: none; box-shadow: none;" />
 				<span class="fragment"><p>Einheitlicher Zugriff bei unterschiedlichen Quellformaten und -systemen</p></span>
 			</section>
 
@@ -187,7 +223,7 @@
         <h1>2. lobid-gnd</h1>
 				<p><span class="fragment">(Für Details siehe auch <a href="http://blog.lobid.org/2018/06/07/lobid-gnd.html">diesen aktuellen Blogbeitrag</a>.)</span></p>
       </section>
-			
+
 			<section>
 
 				<section>
@@ -199,24 +235,24 @@
 	        <h3>Auto Suggest</h3>
 					<img src="img/20180601_lobid-gnd-autosuggest.png" style="border: none; box-shadow: none;" />
 	      </section>
-				
+
 				<section>
 					<h3>Ergebnisliste</h3>
 					<a href="http://lobid.org/gnd/search?q=hannah+arendt"><img src="img/20180605_lobid-gnd-result-list.png" width=800 style="border: none; box-shadow: none;" /></a>
 				</section>
-				
+
 				<section>
 					<h3>Einzeltreffer</h3>
 					<a href="http://lobid.org/gnd/11850391X"><img src="img/20180605_lobid-gnd-einzeltreffer.png" width=800 style="border: none; box-shadow: none;" /></a>
 				</section>
-				
+
 				<section>
 					<h3>Beziehungsgraph</h3>
 					<a href="http://lobid.org/gnd/11850391X#rels"><img src="img/20180606_lobid-gnd-graph.png" style="border: none; box-shadow: none;" /></a>
 				</section>
 
 			</section>
-			
+
 			<section>
 
 				<section>
@@ -294,27 +330,17 @@
 	        <h3><a href="http://lobid.org/gnd/search?q=_exists_%3Aarchitect">Alle Entitäten, zu denen ein Architekt angegeben wurde</a></h3>
 						<a href="http://lobid.org/gnd/search?q=_exists_%3Aarchitect"><img src="img/architect.png" width="800" /></a>
 	      </section>
-				
+
 				<section>
 					<h3><a href="http://lobid.org/gnd/search?q=geographicAreaCode.id%3A%22http%3A%2F%2Fd-nb.info%2Fstandards%2Fvocab%2Fgnd%2Fgeographic-area-code%23XA-DE-BE%22+AND+type%3ANameOfSmallGeographicUnitLyingWithinAnotherGeographicUnit">"Kleinräumige Geografika" innerhalb von Berlin</a></h3>
 						<a href="http://lobid.org/gnd/search?q=geographicAreaCode.id%3A%22http%3A%2F%2Fd-nb.info%2Fstandards%2Fvocab%2Fgnd%2Fgeographic-area-code%23XA-DE-BE%22+AND+type%3ANameOfSmallGeographicUnitLyingWithinAnotherGeographicUnit"><img src="img/geografika.png" width="800" /></a>
 				</section>
 
-			</section>
+				<section>
+					<h3>Siehe auch den Blogbeitrag <br />
+					<a href="http://blog.lobid.org/2018/07/06/lobid-gnd-queries.html">"lobid-gnd: Formulierung komplexer Suchanfragen"</a></h3>
+				</section>
 
-			<section>
-				<h3>Was fehlt noch in lobid-gnd?</h3>
-				<p><span class="fragment">Dokumentation durch Annotation eines Beispiels (wie <a href="http://lobid.org/organisations/api/de#jsonld">hier</a>)</span></p>
-				<p><span class="fragment">OpenRefine Reconciliation Endpoint (<a href="https://github.com/hbz/lobid-gnd/issues/65">#65</a>)</span></p>
-				<p><span class="fragment">Bulk Downloads (<a href="https://github.com/hbz/lobid-gnd/issues/91">#91</a>)</span></p>
-				<p><span class="fragment">Weiterleitungen von GND-URIs nach Zusammenführungen (<a href="https://github.com/hbz/lobid-gnd/issues/117">#117</a>)</span></p>
-				<p><span class="fragment">Usability Tests</span></p>
-				<p><span class="fragment">Nutzer*innen-Feedback: Was vermissen Sie?</span></p>
-			</section>	
-
-			<section>
-				<h3>Lob it</h3>
-				<a href="https://twitter.com/stefandumont/status/1006480443611467776"><img src="img/lobit.png" width="800" /></a>
 			</section>
 
 			<section>
@@ -328,7 +354,7 @@
 			</section>
 
 			<section>
-				
+
 				<section>
 					<h3>NWBib</h3>
 					<a href="https://nwbib.de"><img src="img/nwbib.png" width=800 style="border: none; box-shadow: none;" /></a>
@@ -362,20 +388,26 @@
 
 			<section>
 				<h3>Virtuelle Deutsche Landesbibliographie</h3>
-				<a href="https://tinyurl.com/vdlbsp"><img src="img/vdl.png" width=900 style="border: none; box-shadow: none;" /></a>
-				<p><span class="fragment">Seit April ist nwbib.de in die VDL integriert.</span></p>
+				<a href="https://tinyurl.com/ya5g5lek"><img src="img/vdl.png" width=900 style="border: none; box-shadow: none;" /></a>
+				<p><span class="fragment">Seit April 2018 ist nwbib.de in die VDL integriert.</span></p>
 			</section>
 
 			<section>
 				<h3>Reconciliation mit OpenRefine</h3>
-				<a href="https://github.com/hbz/lobid-organisations/issues/55/#issuecomment-129771979"><img src="img/openrefine.png" width=700 style="border: none; box-shadow: none;" /></a>
-				<p><span class="fragment">Abfrage einer ISIL für eine Liste von Bibliotheken</span></p>
+				<p><span class="fragment">lobid-gnd: <a href="http://blog.lobid.org/2018/08/27/openrefine.html">Ergänzen von GND-IDs zu einer Liste von Personennamen</a></span></p>
+				<p><span class="fragment">lobid-organisations: <a href="https://github.com/hbz/lobid-organisations/issues/55/#issuecomment-129771979">Abfrage einer ISIL für eine Liste von Bibliotheken</a></span></p>
 			</section>
 
 			<section>
 				<h3>Discovery-Index der UB Dortmund</h3>
 				<a href="https://www.ub.tu-dortmund.de/katalogplus/search/?q=gentrifizierung"><img src="img/ub-dortmund-katalog.png" width=600 style="border: none; box-shadow: none;" /></a>
 				<p><span class="fragment">Daten zu den Beständen der UB & einiger umliegender Bibliotheken werden täglich von lobid geholt, transformiert und in den Index geladen</span></p>
+			</section>
+
+			<section>
+				<h3>API für die ZDB</h3>
+				<a href="http://blog.lobid.org/2018/09/04/zdb.html"><img src="img/zdb-post.png" width=600 style="border: none; box-shadow: none;" /></a>
+				<p><span class="fragment">ZDB-Daten sind eine Untermenge von lobid-resources allerdings nur mit Beständen aus dem hbz-Verbund</span></p>
 			</section>
 
 			<section>
