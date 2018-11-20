@@ -89,6 +89,8 @@
 						<li>Daten</li>
 						<li>API</li>
 					</ol>
+					<li>lobid-gnd</li>
+					<li>Anwendungsbeispiele</li>
 				</ol>
       </section>
 
@@ -139,7 +141,6 @@
 				</pre>
 			</section>
 
-
 			<section>
 				<h2>RDF vs. JSON</h2>
 				<a href="https://trends.google.com/trends/explore?date=all&q=rdf,json"><img src="img/json-vs-rdf.png" style="border: none; box-shadow: none;" /></a>
@@ -157,6 +158,16 @@
 				<p><span class="fragment">Anstatt bloße Labels: Links auf weitere strukturierte Daten (Normdatenprinzip)</span></p>
 				<p><span class="fragment">Schnell, weil basierend auf Suchmaschinentechnologie</span></p>
 				<p><span class="fragment">neben Einträgen und Feldern hat auch jede Suchanfrage eine feste URL</span></p>
+			</section>
+
+			<section>
+				<h2>Beispielabfrage</h2>
+				<p><span class="fragment"><a href="http://lobid.org/gnd/search?q=preferredName:Hannah+Arendt+AND+type:Person&format=json">http://lobid.org/gnd/search?q=preferredName:Hannah+Arendt+AND+type:Person&format=json</a></span></p>
+			</section>
+
+			<section>
+				<h2>Beispielantwort</h2>
+				<a href="http://lobid.org/gnd/search?q=preferredName:Hannah+Arendt+AND+type:Person&format=json"><img src="img/api-response.png" style="border: none; box-shadow: none;" /></a>
 			</section>
 
 			<section>
@@ -220,8 +231,8 @@
 			</section>
 
 			<section>
-        <h1>2. lobid-gnd</h1>
-				<p><span class="fragment">(Für Details siehe auch <a href="http://blog.lobid.org/2018/06/07/lobid-gnd.html">diesen aktuellen Blogbeitrag</a>.)</span></p>
+        <h1>3. lobid-gnd</h1>
+				<p><span class="fragment">(Für Details siehe auch <a href="http://blog.lobid.org/2018/06/07/lobid-gnd.html">diesen Blogbeitrag</a>.)</span></p>
       </section>
 
 			<section>
@@ -344,13 +355,27 @@
 			</section>
 
 			<section>
-        <h1>3. Anwendungs-<br />beispiele</h1>
+        <h1>4. Anwendungs-<br />beispiele</h1>
       </section>
 
 			<section>
-				<h3>GND-Lookup im Erfassungsformular</h3>
+				<h3>GND-Lookup in publisso</h3>
 				<a href="https://frl.publisso.de/tools/zettel/forms?id=katalog:article"><img src="img/gnd-lookup.png" width=800 style="border: none; box-shadow: none;" /></a>
 				<p><span class="fragment">Basiert auf Auto-Suggest-Funktion der lobid-gnd-API</span></p>
+			</section>
+
+			<section>
+				<h3>GND-Lookup im CMIF Creator 2</h3>
+				<blockquote>Der <a href="https://correspsearch.net/creator/index.xql?l=de">CMIF Creator</a> ermöglicht das bequeme, formularbasierte Erstellen von digitalen Briefverzeichnissen gedruckter Editionen im <a href="https://github.com/TEI-Correspondence-SIG/CMIF">"Corresponence Metadata Interchange Format"</a> (CMIF) – auch ohne technische Kenntnisse. (...)
+					[Es ist] nun möglich, direkt im Formular die zu einer Person oder Körperschaft passende ID aus der Gemeinsamen Normdatei auszuwählen.
+					Hierbei greift der CMIF Creator 2 auf die von <a href="https://lobid.org/">lobid.org</a> bereitgestellte <a href="http://lobid.org/gnd/api">GND-API</a> zurück.</blockquote>
+				<p><font size="3">Quelle: <a href="https://dhd-blog.org/?p=10632">Stefan Dumont, "correspSearch: Neue Tools, neue Daten – und eine Auszeichnung"</a></font></p>
+			</section>
+
+			<section>
+				<h3>"Semantische Suchanfragen"</h3>
+				<p>Siehe den Blgobeitrag <a href="https://www.societybyte.swiss/2018/10/24/semantische-suchabfragen-mit-der-linked-open-data-cloud-generieren">Semantische Suchabfragen mit der Linked Open Data Cloud generieren</a>
+					 von  Christian Erlinger-Schiedlbauer et al.</p>
 			</section>
 
 			<section>
@@ -408,6 +433,12 @@
 				<h3>API für die ZDB</h3>
 				<a href="http://blog.lobid.org/2018/09/04/zdb.html"><img src="img/zdb-post.png" width=600 style="border: none; box-shadow: none;" /></a>
 				<p><span class="fragment">ZDB-Daten sind eine Untermenge von lobid-resources allerdings nur mit Beständen aus dem hbz-Verbund</span></p>
+			</section>
+
+			<section>
+				<h3>Für Interessierte: SWIB18, Bonn, 26.-28.11.2018</h3>
+				<a href="http://blog.lobid.org/2018/09/04/zdb.html"><img src="img/swib.png" width=600 style="border: none; box-shadow: none;" /></a>
+				<p>Anmeldung: <a href="http://swib.org/swib18/registration.html">http://swib.org/swib18/registration.html></a></p>
 			</section>
 
 			<section>
